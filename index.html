@@ -18,7 +18,7 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-          <a href="./" class="link header-logo"><span class="logo-akcent">Web</span>Stdio</a>
+          <a href="./" class="link header-logo"><span class="logo-akcent">Web</span>Studio</a>
           <ul class="list header-list">
             <li class="header-item">
               <a href="./index.html" class="link header-link actual">Студия</a>
@@ -419,8 +419,24 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-div">
+          <p class="footer-form-p">Подпишитесь на рассылку</p>
+          <form class="footer-form-form">
+            <label class="footer-form-lable"></label>
+            <input type="email" name="email" class="footer-form-input" placeholder="E-mail" />
+            <button type="submit" class="footer-form-button">
+              <span class="footer-form-span"> Подписаться </span>
+              <svg class="footer-form-icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!--=================    modal   =================-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
@@ -428,8 +444,59 @@
             <use href="./img/icons.svg#icon-X"></use>
           </svg>
         </button>
+        <div class="modal-form">
+          <p class="modal-p-basic">Оставьте свои данные, мы вам перезвоним</p>
+          <form class="">
+            <div class="modal-form-div">
+              <label for="user-name" class="modal-form-label">Имя</label>
+              <div class="input-wrap">
+              <input type="name" name="user-name" id="user-name" class="modal-form-input"/>
+              <svg class="modal-form-icon" width="12" height="12">
+                <use href="./img/icons.svg#icon-user"></use>
+              </svg>
+              </div>
+            </div>
+            <div class="modal-form-div">
+              <label  for="user-tel"class="modal-form-label">Телефон</label>
+              <div class="input-wrap">
+              <input  type="tel" name="user-tel" id="user-tel" class="modal-form-input"/>
+              <svg class="modal-form-icon" width="12" height="12">
+                <use href="./img/icons.svg#icon-tel"></use>
+              </svg>
+              </div>
+            </div>
+            <div class="modal-form-div">
+              <label for="user-email" class="modal-form-label">Почта</label>
+              <div class="input-wrap">
+              <input type="email" name="user-email" id="user-email" class="modal-form-input"/>
+              <svg class="modal-form-icon" width="12" height="12">
+                <use href="./img/icons.svg#icon-mail"></use>
+              </svg>
+              </div>
+            </div>
+            <div class="modal-form-div">
+              <label for="user-textarea" class="modal-form-label">Комментарий</label>
+              <textarea name="" id="user-textarea" class="user-textarea modal-form-input" placeholder="Введите текст"></textarea>
+            </div>
+            <div class="modal-form-div-check">
+            <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden">
+            <label for="policy" class="check-text">
+              <span class="check-item">
+                <svg class="modal-check-icon" width="11" height="8">
+                  <use href="./img/icons.svg#icon-Check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю <a href="" class="check-text-link"> Условия договора</a>
+            </label>
+            </div>
+            <button type="submit" class="form-button-send">Отправить</button>
+            
+          </form>
+        </div>
+      </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+Комментарий
