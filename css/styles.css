@@ -982,6 +982,10 @@ a.cards-link {
   border: none;
 }
 
+.modal-check:focus + .check-text .check-item {
+  border-color: var(--akcent-color);
+}
+
 .form-button-send {
   font-family: Roboto;
   font-style: normal;
